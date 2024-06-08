@@ -28,4 +28,4 @@ class Proyecto(models.Model):
     tema = models.ForeignKey(Tema_Proyecto, on_delete=models.PROTECT)
 
     def __str__ (self):
-        return self.nombre + " " + self.documento_id
+        return self.titulo + " " + self.persona.nombre
